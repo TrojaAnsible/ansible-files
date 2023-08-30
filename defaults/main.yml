@@ -1,0 +1,26 @@
+---
+base_git_dir: /opt/git
+
+github_url: 'https://github.com'
+#github_url2: 'git@github.com'
+github_rawurl: 'https://raw.githubusercontent.com'
+
+github_user: 'plix1014'
+github_orga: 'TrojaAnsible'
+
+github_scripts_repo_name: 'scripts-collection'
+
+git_files_repo: '{{ github_url }}/{{ github_orga }}/{{ github_scripts_repo_name }}.git'
+
+
+usr_local_etc_files:
+  - vip.vim
+
+usr_local_bin_files:
+  - fbgetmacaddr
+  - fbsec
+  - fsusage
+  - vip
+  - vipdiff
+  - wakeup
+
