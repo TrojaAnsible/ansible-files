@@ -1,7 +1,7 @@
 Role Name
 =========
 
-used to deploy files into /usr/local to provide new users with a standard set of config files
+used to deploy mandatory files into /usr/local for new server installations
 
 Requirements
 ------------
@@ -10,24 +10,17 @@ Requirements
 Role Variables
 --------------
 
-base_git_dir: /opt/git
+* base_git_dir              ... checkout directory  
+* github_url                ... github domain name
+* github_rawurl             ... github domain name for raw file download
+* github_user               ... github user
+* github_orga               ... github organisation
+* github_scripts_repo_name  ... name of github repository
 
-github_url: 'https://github.com'
+* git_files_repo            ... full repo url, built from above variables
 
-github_rawurl: 'https://raw.githubusercontent.com'
-
-github_user
-
-github_orga
-
-github_scripts_repo_name: 'scripts-collection'
-
-git_files_repo: '{{ github_url }}/{{ github_orga }}/{{ github_scripts_repo_name }}.git'
-
-
-usr_local_etc_files
-
-usr_local_bin_files
+* usr_local_etc_files       ... files to deploy to /usr/local/etc
+* usr_local_bin_files       ... files to deploy to /usr/local/bin
 
 
 Dependencies
