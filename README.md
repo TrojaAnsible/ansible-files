@@ -3,24 +3,26 @@ Role Name
 
 used to deploy mandatory files into /usr/local for new server installations
 
+* Repository URL: [ansible-files](https://github.com/TrojaAnsible/ansible-files)
+
 Requirements
 ------------
 
 
 Role Variables
 --------------
-
-* base_git_dir              ... checkout directory  
-* github_url                ... github domain name
-* github_rawurl             ... github domain name for raw file download
-* github_user               ... github user
-* github_orga               ... github organisation
-* github_scripts_repo_name  ... name of github repository
-
-* git_files_repo            ... full repo url, built from above variables
-
-* usr_local_etc_files       ... files to deploy to /usr/local/etc
-* usr_local_bin_files       ... files to deploy to /usr/local/bin
+| defaults variable | description |
+|-------------------|-------------|
+| my_user                   |user name (for permissions)|
+| base_git_dir              |checkout directory|
+| github_url                |github domain name https://github.com|
+| github_rawurl             |github domain name for raw file download|
+| github_user               |github user|
+| github_orga               |github organisation|
+| github_scripts_repo_name  |name of github repository|
+| git_files_repo            |full repo url, built from above variables|
+| usr_local_etc_files       |files to deploy to /usr/local/etc|
+| usr_local_bin_files       |files to deploy to /usr/local/bin|
 
 
 Dependencies

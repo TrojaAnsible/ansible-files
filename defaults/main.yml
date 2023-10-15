@@ -1,8 +1,9 @@
 ---
+my_user: 'peter'
+
 base_git_dir: /opt/git
 
 github_url: 'https://github.com'
-#github_url2: 'git@github.com'
 github_rawurl: 'https://raw.githubusercontent.com'
 
 github_user: 'plix1014'
@@ -23,4 +24,4 @@ usr_local_bin_files:
   - vip
   - vipdiff
   - wakeup
-
+#
